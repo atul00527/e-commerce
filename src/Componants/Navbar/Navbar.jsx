@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Navbar.css"
 import cart from "../../assets/cart.jpg"
 import logo from "../../assets/logo.jpg"
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [menu,setMenu]=useState("home");
@@ -12,21 +13,22 @@ const Navbar = () => {
             
         </div>
         <ul className='nav-menu'>
-            <li onClick={()=>{setMenu("home")}}>Home
+            <li onClick={()=>{setMenu("home")}}><Link sty to="/"> Home</Link>
                 {menu==="home" ? <hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("mens")}}>Men
+            <li onClick={()=>{setMenu("mens")}}><Link to="/">Men</Link>
                    {menu==="mens" ? <hr/>:<></>}
             </li>
-            <li onClick={()=>{setMenu("womens")}}>Women
+            <li onClick={()=>{setMenu("womens")}}><Link to="/">Women</Link>
                    {menu==="womens" ? <hr/>:<></>}
             </li>
-            <li onClick={()=>{setMenu("kids")}}>Kids
+            <li onClick={()=>{setMenu("kids")}}><Link to="/">Kids</Link>
                    {menu==="kids" ? <hr/>:<></>}
             </li>
         </ul>
         <div className="nav-login-card">
-            <button>Login</button>
-            <img src={cart} alt="" height="39px"/>
+
+            <Link to="/login"><button>Login</button></Link>
+            <Link to="/cart"><img src={cart} alt="" height="39px"/></Link>
             <div className="nav-cart-count">0</div>
         </div>
          

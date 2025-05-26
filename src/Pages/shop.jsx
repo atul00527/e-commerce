@@ -1,11 +1,13 @@
 import React from 'react'
+import Hero from '../Componants/Hero/Hero'
 
-const shop = () => {
+const Shop = () => {
   return (
     <div>
-      
+      <Hero/> 
+      <Popular/> 
     </div>
   )
 }
 
-export default shop
+export default Shop
