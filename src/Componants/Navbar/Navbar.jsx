@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./Navbar.css"
-import cart from "../../assets/cart.jpg"
-import logo from "../../assets/logo.jpg"
+import cart from "../../../public/assets/cart.jpg"
+import logo from "../../../public/assets/logo.jpg"
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
             
         </div>
         <ul className='nav-menu'>
-            <li onClick={()=>{setMenu("home")}}><Link sty to="/"> Home</Link>
+            <li onClick={()=>{setMenu("home")}}><Link to="/"> Home</Link>
                 {menu==="home" ? <hr/>:<></>}</li>
             <li onClick={()=>{setMenu("mens")}}><Link to="/">Men</Link>
                    {menu==="mens" ? <hr/>:<></>}

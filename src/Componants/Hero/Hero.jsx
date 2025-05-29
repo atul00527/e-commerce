@@ -1,9 +1,12 @@
 import React from 'react'
 import './Hero.css'
-import hand_icon from '../../assets/hand_icon.png'
-import arrow_icon from '../../assets/arrow_icon.png'
-import men from '../../assets/p8.webp'
+import hand_icon from '../../../public/assets/hand_icon.png'
+import arrow_icon from '../../../public/assets/arrow_icon.png'
+// Importing images for the hero section
+import men from '../../../public/assets/p8.webp'
 // This is a Hero component that can be used to display a hero section on a webpage.
+
+
 
 const Hero = () => {
   return (
